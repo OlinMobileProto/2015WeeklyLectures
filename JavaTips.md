@@ -2,6 +2,21 @@
 
 It is likely that the language you have most experience with is Python. Knowing Python, here are some points you will most likely be confused about
 
+#### Syntax
+
+In Python, each new line is a statement, and indentation indicates which parts of the code belong to the control statement (if,for,while,functions). In Java, you use a semicolon (;) to indicate a statement. You can put as many statements on a line as you like, but this is bad practice. Please keep yourself to one statement per line. In Java, you use curly brace ({}) to indicate which statements belong to a control statement. After an if, for, while, or functions, place an open curly brace ({), and then a closed curly brace at at the end of the control statement's code (}). Example code follows (don't worry about all of the extra words like static and void, you'll learn that in a little bit). Note the semicolon and curly brace locations:
+
+``` Java
+public void myFunction() {
+	boolean myBool = true;
+	String myString = "Hello";
+	if (myBool) {
+		System.out.println(myString);
+		myBool = false;
+	}
+}
+```
+
 #### Everything is a class:
 
 In Java, no variables exist outside of classes. This means that even for a simple program to print "Hello world" (which in Python is just `print("Hello world")`), the code would look like the following:
@@ -47,13 +62,55 @@ stringVariable = “Hello”
 
 ##### Java:
 
-1. String stringVariable = new String(“Hello”)
+1.String stringVariable = new String(“Hello”)
 
 or
 
-2. String stringVariable = “Hello”
+2.String stringVariable = “Hello”
 
-For most objects, you must use the *new* syntax in example 1. Only primitive types, including "String"s, int, long, boolean can be initialized by the syntax in example 2.
+For most objects, you must use the *new* syntax in example 1. Only primitive types, including "String"s, int, long, boolean can be initialized by the syntax in example 2, without the *new* keyword.
+
+#### Comments
+
+Comments in Java are a double slash for a single line comment, and a slash-asterisk, then asterisk-slash for a multiline comment.
+
+``` Java
+// This is a single line comment
+/* This
+is
+a
+multi-line
+comment */
+
+#### For loops
+
+There are two ways to iterate through a for loop in Java.
+
+1.Quick iteration through Array or List (note: can't iterate through a Map, the equivalent of a Python dictionary, but you can iterate through its keys)
+
+``` Java
+ArrayList<String> myList = new ArrayList<>();
+// blah, blah
+for (String s : myList) {
+	System.out.println(s);
+}
+```
+
+or 
+
+2.C-style iteration
+
+*for* loops of this style take three blocks: an initialization, completion condition, and incrementation. The initialization code is run before the loop is entered, one time only. The completion condition is checked each time the loop is repeated. If the completion condition is false, the loop exits. The incrementation code is run after each loop has completed. Syntax is `for(/* code to be run before */; /* code that checks if loop should exit */; /*code run after each iteration */ ) {`. For example, to iterate through an ArrayList:
+
+``` Java
+ArrayList<String> myList = new ArrayList<>();
+// blah blah
+for (int i=0; i < arrayList.size(); i++) {
+	System.out.println(arrayList.get(i));
+}
+```
+
+An integer i is created and set to zero. Then the condition is checked. Because 0 is less than the size, the loop will run. After the loop, i is incremented by 1. This continues until i is equal to arrayList.size(), and then the loop exits. 
 
 #### Method declaration:
 
