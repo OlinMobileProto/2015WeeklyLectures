@@ -172,17 +172,20 @@ For more information, [read here](http://www.tutorialspoint.com/java/java_interf
 
 ##### this
 
-"this" is equivalent to "self" in Python. "this" refers to the current instance. 
+*this* is equivalent to *self* in Python. *this* refers to the current instance. 
 
 ##### the word static:
 
-"static", as explained above, simply means that the method or variable belongs to the class and not an instance of the class. [Read here](http://stackoverflow.com/questions/2649213/in-laymans-terms-what-does-static-mean-in-java)
+*static*, as explained above, simply means that the method or variable belongs to the class and not an instance of the class. [Read here](http://stackoverflow.com/questions/2649213/in-laymans-terms-what-does-static-mean-in-java)
 
 ##### Casting:
 
 Casting is the process of converting an object to one of its subclasses. For example, the function getActivity() always returns a variable of type Activity. However, you usually have already subclassed it, so you can cast it to your type. 
 
+``` Java
 castedObject = (String)otherVariable
+MainActivity myActivity = (MainActivity)getActivity();
+```
 
 [Read here](http://stackoverflow.com/questions/5289393/casting-variables-in-java)
 
