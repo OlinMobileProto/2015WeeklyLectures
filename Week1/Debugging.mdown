@@ -1,0 +1,46 @@
+## Debugging Using Android Studio
+
+Android Studio has a debugger that is quite possibly the best thing ever. To the right of where you normally run an app there is a button “Debug app” this allows you to set breakpoints in your code that function similarly to breakpoints in Matlab.
+
+You can add a breakpoint to a line of code by clicking to the left of the line of code, and you will see a red dot appear. 
+
+Now run the app in debug mode by selecting the button to the right of the play button. Your application will stop when it reaches that breakpoint and you will see this appear at the bottom of your screen
+![Debug Console](https://github.com/OlinMobileProto/2015WeeklyLectures/blob/master/Week1/DebuggingImages/DebugConsole.png)
+
+### The debug console
+
+This above image is known as the debug console. There is a lot of functionality here, but we will call out the most useful functionality below
+
+On the right of this screen you will see information about active variables, and you can open them up to see what specific attributes of that variable are.
+
+While you are at this breakpoint there are a few things you can do to also help with debugging.
+
+- As mentioned you can inspect variables
+- You can skip to the next breakpoint
+- Step into code
+- Step over code
+
+#### Stepping over code
+Stepping over code means that we will run the code on the line we are presently on, move tot he next line and the variables will update accordingly. It is accomplished through this button on the debug bar
+
+![Stepping Over](https://github.com/OlinMobileProto/2015WeeklyLectures/blob/master/Week1/DebuggingImages/StepOver.png)
+
+
+#### Stepping into code
+Stepping into code means that we can actually go into a method that is called on that line. The button to do so looks like this.
+
+![Step Into](https://github.com/OlinMobileProto/2015WeeklyLectures/blob/master/Week1/DebuggingImages/StepInto.png)
+
+For example:
+If the debugger is presently on this line
+          
+
+>  groceryList.addInformation(message);
+
+
+And I step into the code it will open up the addInformation method and I can continue to step over each line of code in that method. When you reach the end of the method you stepped into you will return to the line of code you were at. 
+
+#### Advance to next breakpoint
+
+![Advance to next breakpoint](https://github.com/OlinMobileProto/2015WeeklyLectures/blob/master/Week1/DebuggingImages/SkipBreakPoint.png)
+This button will skip to the next breakpoint, if there is no next  breakpoint it will run through the app.
