@@ -34,8 +34,9 @@ Stepping into code means that we can actually go into a method that is called on
 For example:
 If the debugger is presently on this line
           
-
->  groceryList.addInformation(message);
+``` Java
+ groceryList.addInformation(message);
+ ```
 
 
 And I step into the code it will open up the addInformation method and I can continue to step over each line of code in that method. When you reach the end of the method you stepped into you will return to the line of code you were at. 
