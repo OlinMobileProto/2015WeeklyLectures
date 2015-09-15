@@ -69,7 +69,7 @@ Volley has (very ugly) documentation here: http://afzaln.com/volley/. Find the c
 Volley has many request classes, depending which type of data you would like to recieve. For example, suppose we'd like to get a JSON object from the server (the most common use case). We would use JsonObjectRequest. Then you pass the request method you would like to use, the URL, a JSONObject to be used as the body, and two listeners: one for a response and one for errors. You will obtain the request method, the URL, and necessary request body from the documentation for the API you are using. Example code follows:
 
 ``` Java
-public void searchSpotify(String song) {
+public void searchSpotify(String search) {
         // setup requestqueue here. Usually you should set up one queue for global use
         RequestQueue queue = Volley.newRequestQueue(this);
 
