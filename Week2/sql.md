@@ -4,6 +4,10 @@
 
 You may hear different implementation of a SQL database such as Oracle, PostgreSQL, MySQL. These differ in advanced functionality the basics and language specifics are the same:
 
+http://developer.android.com/training/basics/data-storage/databases.html
+
+That link contains some Android best rpactices and a tutorial for connecting saving data to a SQL database
+
 ###What makes up a SQL database?
 
 One database can have many many tables. Each table has columns and rows.
